@@ -1,0 +1,15 @@
+.btn-upload {
+    width: 4em;
+    height: 1.5em;
+    border:none;
+    outline: none;
+    background: #4dc;
+    cursor: pointer;
+}
+
+span {
+    font-size: 2em;
+    color: #4dc;
+    font-weight: bold;
+    padding: 1em;
+}

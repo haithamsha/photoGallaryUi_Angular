@@ -1,0 +1,13 @@
+<form class="form" (ngSubmit)="onSubmit()">
+    <input type="file" #file (change)="uploadFile(file.files)" placeholder="Add Image...">
+    <button type="button" class="btn-upload" (click)="file.click()"> Upload</button>
+
+    <div>
+        <span class="upload" *ngIf="progress > 0">
+            {{progress}}%
+        </span>
+        <span class="upload" *ngIf="message">
+            {{message}}
+        </span>
+    </div>
+</form>

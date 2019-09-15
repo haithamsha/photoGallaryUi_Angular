@@ -1,0 +1,16 @@
+<h2>Image List</h2>
+
+
+<div>
+    <button (click)="_deleteAll()" title="Delete" class="btn-delete-lg"> Delete All</button>
+</div>
+
+<div class="image-container"
+ *ngFor="let image of images"
+ (deleteImage) = "deleteImage($event)"
+ >
+    <div>
+        <button (click)="_deleteImage(image)" title="Delete" class="btn-delete"> X</button>
+        <img [src]="image.Url"  [alt]="image.Url">
+    </div>
+</div>
